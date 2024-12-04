@@ -2,7 +2,6 @@
   "name": "bun-first",
   "version": "0.1.0",
   "description": "A powerful Bun.js server application",
-  "main": "src/index.ts",
   "type": "module",
   "scripts": {
     "start": "bun run src/index.ts",
