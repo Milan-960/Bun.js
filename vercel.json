@@ -1,18 +1,13 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/index.ts",
-      "use": "@vercel/bun@1.0.0"
-    }
-  ],
+  "framework": "bun",
+  "buildCommand": "bun run build",
+  "installCommand": "bun install",
+  "startCommand": "bun run start",
   "routes": [
     {
       "src": "/(.*)",
       "dest": "src/index.ts"
     }
-  ],
-  "env": {
-    "PORT": "3000"
-  }
+  ]
 }
