@@ -1,5 +1,5 @@
 import figlet from "figlet";
-import { createAsciiArt } from "./ascii-art.ts";
+import { createAsciiArt } from "./ascii-art";
 
 // Server configuration interface
 interface ServerConfig {
