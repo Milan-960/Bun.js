@@ -1,20 +1,43 @@
 {
   "name": "bun-first",
-  "module": "index.ts",
+  "version": "0.1.0",
+  "description": "A powerful Bun.js server application",
+  "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "start": "bun run index.ts",
-    "build": "bun build ./index.ts --outdir ./dist --watch",
-    "test": "bun test index.ts"
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir ./dist --target bun",
+    "test": "bun test",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "bun",
+    "typescript",
+    "server",
+    "api"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "figlet": "^1.8.0"
   },
   "devDependencies": {
     "@types/bun": "^1.1.14",
-    "@types/figlet": "^1.7.0"
+    "@types/figlet": "^1.5.8",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "typescript": "^5.3.3"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "engines": {
+    "bun": ">=1.0.0"
   },
-  "dependencies": {
-    "figlet": "^1.8.0"
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "eslint --fix"
+    ]
   }
 }
