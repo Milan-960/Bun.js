@@ -1,5 +1,5 @@
-import { createServer } from "./index.route";
-import { loggerMiddleware } from "./logger.middleware";
+import { createServer } from "./index.route.ts";
+import { loggerMiddleware } from "./logger.middleware.ts";
 
 // Create and configure the server
 const server = createServer({
