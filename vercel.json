@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "framework": "bun",
   "buildCommand": "bun run build",
   "installCommand": "bun install",
   "routes": [
