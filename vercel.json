@@ -3,7 +3,6 @@
   "framework": "bun",
   "buildCommand": "bun run build",
   "installCommand": "bun install",
-  "startCommand": "bun run start",
   "routes": [
     {
       "src": "/(.*)",
